@@ -424,13 +424,13 @@ func (e *Enforcer) enforce(matcher string, explains *[]string, rvals ...interfac
 		}
 		for i, pvals := range e.model["p"]["p"].Policy {
 			// log.LogPrint("Policy Rule: ", pvals)
-			if len(e.model["p"]["p"].Tokens) != len(pvals) {
-				return false, fmt.Errorf(
-					"invalid policy size: expected %d, got %d, pvals: %v",
-					len(e.model["p"]["p"].Tokens),
-					len(pvals),
-					pvals)
-			}
+// 			if len(e.model["p"]["p"].Tokens) != len(pvals) {
+// 				return false, fmt.Errorf(
+// 					"invalid policy size: expected %d, got %d, pvals: %v",
+// 					len(e.model["p"]["p"].Tokens),
+// 					len(pvals),
+// 					pvals)
+// 			}
 
 			parameters.pVals = pvals
 
